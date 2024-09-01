@@ -1,0 +1,171 @@
+* {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Bagian Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Navigasi */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #007bff; 
+}
+
+/* Konten Utama */
+main {
+    padding: 2rem;
+}
+
+/* Bagian Tentang (About) */
+#about {
+    padding: 2rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.profile-text {
+    max-width: 600px;
+}
+
+.profile h2 {
+    margin-top: 0;
+}
+
+.education-item,
+#experience,
+#skills,
+#portfolio,
+#contact {
+    background: #f0f0f0; /* Latar belakang abu-abu muda buat bagian-bagian ini */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px; /* Biar sudutnya agak melengkung */
+}
+
+/* Bagian Pendidikan */
+.education-details {
+    margin-bottom: 1rem;
+}
+
+.education-details ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.education-details ul ul {
+    list-style-type: circle;
+    padding-left: 2rem;
+}
+
+.graduation-year {
+    float: right;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Judul Khusus di Bagian Tertentu */
+#experience h2,
+#skills h2,
+#portfolio h2,
+#contact h2 {
+    background-color: #e0e0e0; /* Latar belakang abu-abu muda buat judul di bagian ini */
+    padding: 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Bagian Kontak */
+#contact {
+    padding: 1rem;
+    background: #f9f9f9; /* Warna latar belakang beda sedikit buat bagian kontak */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Biar item-itemnya rata tengah secara horizontal */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem; /* Margin agak rapat antar item */
+    flex: 1 1 30%; /* Biar lebar item-itemnya pas buat dalam satu baris */
+    max-width: 250px; /* Batas maksimal lebar tiap item */
+    box-sizing: border-box;
+}
+
+.contact-item i {
+    font-size: 1.2rem; /* Ukuran ikon agak kecil */
+    margin-right: 0.5rem;
+    color: #333;
+}
+
+.contact-item span {
+    font-size: 0.9rem; /* Ukuran teks agak kecil */
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.contact-link:hover {
+    color: #007bff; /* Warna saat hover */
+}
+
+.contact-link i {
+    color: #007bff; /* Warna ikon */
+}
+
+/* Container Kartu */
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
