@@ -1,7 +1,20 @@
 * {
-  font-family: Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.6;
   font-size: 20px;
+}
+h1.title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(120vw); /* Bergerak melintasi seluruh lebar layar */
+  }
 }
 
 /* Bagian Header */
@@ -14,6 +27,7 @@ header {
 }
 
 /* Navigasi */
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -58,13 +72,20 @@ main {
   height: 80vh;
 }
 
-.section__pic-container {
+/* .section__pic-container {
   display: flex;
   height: 400px;
   width: 400px;
   margin: auto 0;
-}
+} */
 
+.section__pic-container {
+  display: grid;
+  place-items: center; /* Menempatkan konten di tengah secara horizontal dan vertikal */
+  height: 400px;
+  width: 400px;
+  margin: auto;
+}
 .section__text {
   align-self: center;
   text-align: center;
@@ -97,6 +118,7 @@ main {
 }
 
 #experience,
+#education,
 #skills,
 #portfolio,
 #contact {
@@ -366,12 +388,16 @@ footer p {
 }
 
 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
   border-radius: 50%;
 }
 
 .animated-div {
-  animation: moveRight 3s ease-out forwards;
-  -webkit-animation: moveRight 3s ease-out forwards;
+  display: flex;
+  justify-content: center; /* Menjamin animasi tetap berada di tengah */
+  align-items: center; /* Menjamin animasi tetap berada di tengah */
 }
 
 @keyframes moveRight {
@@ -380,12 +406,35 @@ img {
   }
   100% {
       transform: translateX(100px);
-  }
+      -webkit-transform: translateX(100px);
+      -moz-transform: translateX(100px);
+      -ms-transform: translateX(100px);
+      -o-transform: translateX(100px);
+}
 }
 
 .small-img {
-  width: 400px; 
-  height: 400px; 
+  width: 100%; /* Menjamin gambar memenuhi container */
+  height: auto;
   object-fit: cover;
-  border-radius: 50%; 
+  border-radius: 50%;
+}
+
+
+.fish-container {
+  position: absolute;
+  top: 50%; /* Sesuaikan dengan posisi yang diinginkan */
+  left: -150px; /* Mulai dari luar layar */
+  z-index: 1; /* Pastikan ikan berada di atas konten lain */
+}
+
+.fish {
+  width: 100px; /* Sesuaikan ukuran ikan */
+  animation: swim 10s infinite linear;
+}
+
+.title img.painting-img {
+  width: 40px; /* Sesuaikan ukuran gambar */
+  height: auto; /* Agar proporsi gambar tetap terjaga */
+  margin-left: 10px; /* Jarak antara teks "Portfolio" dan gambar */
 }
