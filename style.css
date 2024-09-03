@@ -1,6 +1,9 @@
 * {
-    font-family: Arial, sans-serif;
+    font-family: Arial, san
+    s-serif;
     line-height: 1.6;
+ 
+    
 }
 
 /* Bagian Header */
@@ -9,6 +12,7 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    overflow: hidden;
 }
 
 /* Navigasi */
@@ -32,6 +36,34 @@ nav ul li a:hover {
     color: #007bff; 
 }
 
+footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Navigasi */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #007bff; 
+}
+
 /* Konten Utama */
 main {
     padding: 2rem;
@@ -41,20 +73,42 @@ main {
 #about {
     padding: 2rem;
 }
-
-.profile {
+#profile {
     display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.profile img {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-right: 1rem;
-}
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+  }
+  
+  .section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+  }
+  
+  .section__text {
+    align-self: center;
+    text-align: center;
+  }
+  
+  .section__text p {
+    font-weight: 600;
+  }
+  
+  .section__text__p1 {
+    text-align: center;
+  }
+  
+  .section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+    text-align: center;
+  }
 
 .profile-text {
     max-width: 600px;
@@ -65,6 +119,7 @@ main {
 }
 
 .education-item,
+
 #experience,
 #skills,
 #portfolio,
@@ -97,9 +152,7 @@ main {
 }
 
 /* Judul Khusus di Bagian Tertentu */
-#experience h2,
-#skills h2,
-#portfolio h2,
+
 #contact h2 {
     background-color: #e0e0e0; /* Latar belakang abu-abu muda buat judul di bagian ini */
     padding: 0.5rem;
@@ -168,4 +221,297 @@ main {
 .card img {
     max-width: 100%;
     height: auto;
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+#portfolios {
+    position: relative;
+  }
+  
+  .color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+  }
+  
+  .portfolio-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .portfolio-title {
+    margin: 1rem;
+    color: black;
+  }
+  
+  .portfolio-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+  }
+  /* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+  }
+  
+  /* BUTTONS */
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+  }
+  
+  .btn-color-1,
+  .btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+  }
+  
+  .btn-color-1:hover,
+  .btn-color-2:hover {
+    cursor: pointer;
+  }
+  
+  .btn-color-1,
+  .btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+  }
+  
+  .btn-color-1:hover {
+    background: rgb(0, 0, 0);
+  }
+  
+  .btn-color-2 {
+    background: none;
+  }
+  
+  .btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+  }
+  
+  .btn-container {
+    gap: 1rem;
+  }
+  
+  /* ABOUT SECTION */
+  
+  #about {
+    position: relative;
+  }
+  
+  .about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .about-details-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .about-containers,
+  .about-details-container {
+    display: flex;
+  }
+  
+  .about-pic {
+    border-radius: 2rem;
+  }
+  
+  .arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+  }
+  
+  .details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+  }
+  
+  .section-container {
+    gap: 4rem;
+    height: 80%;
+  }
+  
+  .section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+  }
+  img {
+    border-radius: 50%;
+  }
+  
+  .animated-div {
+  animation: moveRight 3s ease-out forwards;
+  -webkit-animation: moveRight 3s ease-out forwards;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+.small-img {
+  width: 400px; 
+  height: 400px; 
+  object-fit: cover;
+  border-radius: 50%; 
+}
+
+  
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+.container {
+  width: 300px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.circle-chart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle-container {
+  text-align: center;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: conic-gradient(#4c6ef5 0% 0%, #b0c4de 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  position: relative;
+}
+
+.circle:after {
+  content: attr(data-percentage) '%';
+  position: absolute;
+  font-size: 16px;
+}
+
+.circle[data-percentage="99"] {
+  background: conic-gradient(#4c6ef5 0% 99%, #b0c4de 99%);
+}
+
+.circle[data-percentage="65"] {
+  background: conic-gradient(#4c6ef5 0% 65%, #b0c4de 65%);
+}
+
+.bar-chart .bar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bar-container p {
+  width: 100px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.bar {
+  height: 10px;
+  background-color: #4c6ef5;
+  border-radius: 5px;
+}
+
+.excellent {
+  width: 100px;
+}
+
+.good {
+  width: 70px;
 }
