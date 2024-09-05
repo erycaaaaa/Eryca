@@ -2,21 +2,12 @@
   font-family: 'Raleway', sans-serif;
   line-height: 1.6;
   font-size: 20px;
+
 }
 h1.title {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
-
-@keyframes swim {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(120vw); /* Bergerak melintasi seluruh lebar layar */
-  }
-}
-
 /* Bagian Header */
 header {
   background: #333;
@@ -62,7 +53,7 @@ main {
 
 /* Bagian Tentang (About) */
 #about {
-  padding: 2rem;
+  padding: 1rem
 }
 
 #profile {
@@ -70,21 +61,15 @@ main {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  padding: 1rem
 }
-
-/* .section__pic-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-} */
-
 .section__pic-container {
   display: grid;
-  place-items: center; /* Menempatkan konten di tengah secara horizontal dan vertikal */
+  place-items: center; 
   height: 400px;
   width: 400px;
   margin: auto;
+  
 }
 .section__text {
   align-self: center;
@@ -132,6 +117,7 @@ main {
 .education-item,
 .education-details {
   margin-bottom: 1rem;
+padding-left: 0%;
 }
 
 .education-details ul {
@@ -354,6 +340,7 @@ footer p {
   margin-bottom: 2rem;
   margin-top: 2rem;
   display: flex;
+
 }
 
 .about-details-container {
@@ -396,8 +383,8 @@ img {
 
 .animated-div {
   display: flex;
-  justify-content: center; /* Menjamin animasi tetap berada di tengah */
-  align-items: center; /* Menjamin animasi tetap berada di tengah */
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes moveRight {
@@ -414,7 +401,7 @@ img {
 }
 
 .small-img {
-  width: 100%; /* Menjamin gambar memenuhi container */
+  width: 100%; 
   height: auto;
   object-fit: cover;
   border-radius: 50%;
@@ -423,18 +410,22 @@ img {
 
 .fish-container {
   position: absolute;
-  top: 50%; /* Sesuaikan dengan posisi yang diinginkan */
-  left: -150px; /* Mulai dari luar layar */
-  z-index: 1; /* Pastikan ikan berada di atas konten lain */
+  top: 50%; 
+  left: -150px; 
+  z-index: 1; 
 }
 
 .fish {
-  width: 100px; /* Sesuaikan ukuran ikan */
+  width: 100px; 
   animation: swim 10s infinite linear;
 }
 
 .title img.painting-img {
-  width: 40px; /* Sesuaikan ukuran gambar */
-  height: auto; /* Agar proporsi gambar tetap terjaga */
-  margin-left: 10px; /* Jarak antara teks "Portfolio" dan gambar */
+  width: 40px; 
+  height: auto; 
+  margin-left: 10px; 
+}
+
+.zoom-text {
+  transition: transform 0.3s ease; 
 }
